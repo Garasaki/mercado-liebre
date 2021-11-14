@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "Ejercicio - DH - Mercado Liebre",
   "main": "app.js",
-  "homepage": "https://github.com/comodinx/MercadoLiebre#readme",
+  "homepage": "https://github.com/Garasaki/mercado-liebre#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/comodinx/MercadoLiebre.git"
+    "url": "git+https://github.com/Garasaki/mercado-liebre.git"
   },
-  "author": "Nicolas Molina",
+  "author": "Sergio Abadia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/comodinx/MercadoLiebre/issues"
+    "url": "https://github.com/Garasaki/mercado-liebre/issues"
   },
   "scripts": {
     "dev": "nodemon app",

@@ -11,21 +11,34 @@ box-sizing : border-box;
 --celeste : #1259c3;
 --gris-oscuro : #666;
 --gris-claro : #ebebeb;
---verde : #39b54a;
 }
 
 body {
 font-size: 12px;
-font-family : Roboto;    
+font-family : Roboto; 
+background-color: var(--gris-claro);   
 }
 
 header {
 background-color: var(--amarillo);
 }
 
+.burger-menu{
+text-align: center;    
+}
+
+.burger-menu i {
+background-color : var(--celeste);
+color : white;
+font-size: 20px;
+padding: 15px;
+border-radius: 10px;
+}
+
 main {
-background-color: var(--verde);
 text-align : center;
+width : 90%;
+margin : 0 auto;
 }
 
 h3 {
@@ -41,6 +54,9 @@ font-size : 32px;
 padding : 10px;
 }
 
+article{
+margin-bottom: 10px;
+}
 article p {
 font-size: 18px;
 }
