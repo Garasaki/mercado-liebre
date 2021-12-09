@@ -1,30 +1,14 @@
-//
-// imports
-//
 const express = require('express');
-const path = require('path');
 const app = express();
+const path = require('path');
+const publicPath = path.resolve(__dirname, './public') ;
+port = 3050;
 
-//
-// constants
-//
-const port = process.env.PORT || 3000;
-const baseViewsPath = path.join(__dirname, 'views');
+app.use(express.static(publicPath));
 
-//
-// middlewares
-//
-app.use(express.static('public'));
+app.get('/', (req,res) => res.sendFile(path.join(__dirname,'/views/home.html')));
+app.get('/')
 
-//
-// routes
-//
-app.get('/', (req, res) => res.sendFile(path.join(baseViewsPath, 'home.html')));
 
-// error pages
-app.get('/404', (req, res) => res.send('Error página no encontrada'));
 
-//
-// listen application
-//
-app.listen(port, () => console.log(`Servidor iniciado en el puerto http://localhost:${port}`));
+app.listen(3050, () => console.log(`server running at localhost:${port}`));
