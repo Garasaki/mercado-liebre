@@ -1,0 +1,35 @@
+/* Normalize */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --amarillo: #eac926;
+    --azul: #03264c;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.boton{
+    color: var(--celeste);
+    border: 1px solid;
+    border-radius: 5px;
+    height: 32px;
+    width: 100px;
+}
+
+.upload-button{
+    color: var(--celeste);
+    background-color: var(--amarillo);
+}

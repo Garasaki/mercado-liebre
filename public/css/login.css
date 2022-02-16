@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+
+.header-logo {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 50%;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: var(--celeste);
+  color: white;
+}
+
+
+.create-form{
+  padding: 20px 15px;
+  }
+  
+  .control-formulario{
+    margin-bottom: 15px;
+  }
+  
+  .control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+  }
+  
+  .control{
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .boton-formulario{
+  background-color: var(--verde);
+  border: none;
+  font-size: 20px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  }
+  
