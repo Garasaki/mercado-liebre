@@ -8,6 +8,7 @@
 }
 
 :root {
+  --color-hover: #0022aa;
   --amarillo: #eac926;
   --azul: #03264c;
   --celeste: #1259c3;
@@ -43,6 +44,7 @@ header {
 }
 
 .search-bar {
+  padding-left: 8px;
   border: none;
   border-radius: 5px;
   font-size: 12px;
@@ -66,6 +68,10 @@ header {
   position: absolute;
   top: 15px;
   right: 5px;
+}
+
+.fa-hand-holding-usd {
+  margin-right: 5px;
 }
 
 .burger-menu {
@@ -152,6 +158,11 @@ main article img {
   right: 20px;
   top: -15px;
   position: absolute;
+  transition: transform 500ms ease;
+}
+
+.fa-truck:hover {
+  transform: rotate(-90deg);
 }
 
 .precio {
@@ -191,6 +202,11 @@ main article img {
   font-size: 1em;
   border: 1px solid var(--celeste);
   padding: 0.5rem 1rem;
+  transition: all 500ms ease;
+}
+
+#form-login button:hover {
+  background-color: var(--color-hover);
 }
 
 #form-register {
@@ -206,6 +222,7 @@ main article img {
   border: 1px solid var(--gris-claro);
   font-size: 1em;
   padding: 0.5rem 1rem;
+  margin-left: 15px;
 }
 
 #form-register label {
@@ -216,25 +233,33 @@ main article img {
 }
 
 .perfil-de-usuario {
-border: dashed 1px var(--gris-oscuro);
+  border-bottom: dashed 1px var(--gris-oscuro);
+  display: flex;
+  flex-direction: column;
 }
-
 
 #form-register .soft-label {
   font-weight: normal;
 }
 
 .register-intereses {
-  border: dashed 1px var(--gris-oscuro);
+  padding: 5px;
+  border-bottom: dashed 1px var(--gris-oscuro);
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 #form-register .register-intereses input {
   margin-bottom: 5px;
 }
 
-.button-register :nth-child(1){
+.button-register {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.button-register :nth-child(1) {
   background-color: var(--celeste);
   color: white;
   border-radius: 5px;
@@ -242,22 +267,27 @@ border: dashed 1px var(--gris-oscuro);
   border: 1px solid var(--celeste);
   padding: 0.5rem 1rem;
   width: 75px;
+  transition: all 500ms ease;
 }
 
-.button-register :nth-child(2){
+.button-register :nth-child(1):hover {
+  background-color: var(--color-hover);
+}
+
+.button-register :nth-child(2) {
   background-color: var(--gris-oscuro);
   color: white;
   border-radius: 5px;
   font-size: 1em;
-  border: 1px solid var(--celeste);
+  border: 1px solid var(--gris-oscuro);
   padding: 0.5rem 1rem;
   width: 75px;
 }
 
-
 /*footer style*/
 
 footer {
+  width: 100%;
   background: white;
   text-align: center;
   color: var(--gris-oscuro);
@@ -268,52 +298,44 @@ footer .articulos i {
   font-size: 2em;
   margin-bottom: 10px;
   color: var(--celeste);
+  transition: all 500ms ease;
+}
+
+footer .articulos i:hover {
+  color: var(--gris-oscuro);
 }
 
 .copyright {
   padding-top: 15px;
 }
 
+/*VISTA TABLET*/
 @media (min-width: 361px) {
   .leyenda {
     align-items: center;
     display: flex;
   }
   .header-logo {
-    flex-basis: 70%;
+    padding: 10px;
+    flex-basis: 67%;
+    text-align: left;
     justify-content: space-between;
   }
 
   .header-logo img {
     padding: 5px;
-  }
-
-  .search-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .fa-search {
-    position: relative;
-    background-color: white;
-    top: 0;
-    right: 0;
-    font-size: 16px;
-    margin-left: 5px;
-    border: 1px solid var(--gris-oscuro);
-    border-radius: 3px;
-    padding: 1.5px;
+    height: 60px;
   }
 
   header aside {
     flex-basis: 30%;
+    text-align: right;
   }
 
   .listas {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 0 10px 10px 10px;
   }
 
   .site {
@@ -322,7 +344,7 @@ footer .articulos i {
     align-items: center;
   }
   .site li {
-    padding-left: 5px;
+    padding-left: 10px;
   }
 
   .site li a {
@@ -337,7 +359,7 @@ footer .articulos i {
   }
 
   .login li {
-    padding: 5px;
+    padding: 10px;
   }
 
   .login li a {
@@ -354,24 +376,68 @@ footer .articulos i {
   }
 
   main article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 45%;
     margin-left: 2.5%;
+    transition: all 500ms ease;
+  }
+
+  main article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
   .product-title {
     font-size: 16px;
     color: var(--gris-oscuro);
     display: block;
+    height: 20px;
+    opacity: 0;
+    transition: all 500ms ease;
+  }
+
+  .product:hover .product-title {
+    opacity: 1;
+    height: 20px;
+  }
+
+  .products .product {
+    flex-basis: 50%;
+  }
+
+  #form-login {
+    margin: auto;
+    width: 80vw;
+  }
+
+  #form-register {
+    margin: auto;
+    width: 80vw;
   }
 }
 
+/*VISTA DESKTOP*/
 @media (min-width: 769px) {
+  .header-logo img {
+    height: 60px;
+  }
+
   main section {
     padding: 1%;
   }
   main article {
     width: 24%;
     margin-left: 1%;
+  }
+
+  footer .articulos {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #form-login {
+    width: 50vw;
+  }
+
+  #form-register {
+    width: 50vw;
   }
 }

@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercadoliebre</title>
     <link href="/css/styles.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/c00d716406.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/c00d716406.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -17,18 +14,11 @@
         <div class="header-logo">
           <img src="images/logo-mercado-liebre.svg" alt="logo" />
           <div class="search-wrap">
-            <input
-              class="search-bar"
-              type="search"
-              placeholder="Buscar productos, marcas"
-            />
+            <input class="search-bar" type="search" placeholder="Buscar productos, marcas y más..." />
             <i class="fas fa-search"></i>
           </div>
         </div>
-        <aside>
-          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
-          de crédito
-        </aside>
+        <aside><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</aside>
       </div>
       <div class="listas">
         <ul type="none" class="site">
@@ -53,60 +43,61 @@
     </header>
     <main>
       <!--FORM REGISTER -->
-      <form id="form-register" action="/login" method="POST">
+      <form id="form-register" action="/register" method="POST">
         <label>Datos Personales</label>
         <input type="text" placeholder="Nombre y Apellido" />
         <input type="text" placeholder="Domicilio" />
         <input type="email" placeholder="E-mail" />
         <label>Fecha de Nacimiento</label>
-        <input type="date" placeholder="Fecha de Nacimiento"/>
+        <input type="date" placeholder="Fecha de Nacimiento" />
 
         <label>Cuenta</label>
         <input type="text" placeholder="Nombre de usuario" />
         <input type="password" placeholder="Contraseña" />
         <input type="password" placeholder="Confirmar contraseña" />
 
-
         <div class="perfil-de-usuario">
-        <label>Perfil de usuario</label>
-          <div>
-          <input type="radio" name="" id="comprador" />
-          <label class="soft-label" for="comprador">Comprador</label>
-          <input type="radio" name="" id="vendedor" />
-          <label class="soft-label" for="vendedor">Vendedor</label>
+          <label>Perfil de usuario</label>
+          <div class="radio-options">
+            <input type="radio" name="rol" id="comprador" value="1">
+            <label class="soft-label" for="comprador">Comprador</label>
+            <input type="radio" name="rol" id="vendedor" value="2">
+            <label class="soft-label" for="vendedor">Vendedor</label>
           </div>
-        </div> 
+        </div>
 
         <div class="register-intereses">
           <label>Intereses</label>
           <div>
-          <input class="" type="checkbox" name="" id="electro" />
-          <label class="soft-label" for="electro">Electro</label>
+            <input class="" type="checkbox" name="" id="electro" />
+            <label class="soft-label" for="electro">Electro</label>
           </div>
           <div>
-          <input type="checkbox" name="" id="moda" />
-          <label class="soft-label" for="moda">Moda</label>
+            <input type="checkbox" name="" id="moda" />
+            <label class="soft-label" for="moda">Moda</label>
           </div>
           <div>
-          <input type="checkbox" name="" id="hogar" />
-          <label class="soft-label" for="hogar">Hogar</label>
+            <input type="checkbox" name="" id="hogar" />
+            <label class="soft-label" for="hogar">Hogar</label>
           </div>
           <div>
-          <input type="checkbox" name="" id="jugueteria" />
-          <label class="soft-label" for="jugueteria">Jugueteria</label>
+            <input type="checkbox" name="" id="jugueteria" />
+            <label class="soft-label" for="jugueteria">Jugueteria</label>
           </div>
           <div>
-          <input type="checkbox" name="" id="vida-sana" />
-          <label class="soft-label" for="vida-sana">Vida Sana</label>
+            <input type="checkbox" name="" id="vida-sana" />
+            <label class="soft-label" for="vida-sana">Vida Sana</label>
           </div>
         </div>
 
-        <label>Foto de usuario</label>
-        <input type="file" name="avatar" accept=".jpg, .pdf" multiple placeholder="Subir Foto">
+        <div class="register-intereses">
+          <label>Foto de usuario</label>
+          <input type="file" name="avatar" accept=".jpg, .pdf" multiple placeholder="Subir Foto" />
+        </div>
 
-        <div class="button-register">        
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpiar</button>
+        <div class="button-register">
+          <button class="submit-button" type="submit">Enviar</button>
+          <button class="reset-button" type="reset">Limpiar</button>
         </div>
       </form>
 
@@ -119,30 +110,21 @@
           <p>
             <b>Pagá con tarjeta o en efectivo</b>
           </p>
-          <p>
-            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
-            efectivo en puntos de pago. ¡Y siempre es seguro!
-          </p>
+          <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
         </article>
         <article>
           <i class="fas fa-gift"></i>
           <p>
             <b>Envío gratis desde $ 2.500</b>
           </p>
-          <p>
-            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
-            miles de productos. Es un beneficio de Mercado Puntos.
-          </p>
+          <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
         </article>
         <article>
           <i class="fas fa-user-shield"></i>
           <p>
             <b>Seguridad, de principio a fin</b>
           </p>
-          <p>
-            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
-            puedas hacer, porque estás siempre protegid@.
-          </p>
+          <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
         </article>
       </section>
       <section class="copyright">

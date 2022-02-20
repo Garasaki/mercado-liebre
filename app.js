@@ -11,6 +11,8 @@ app.get('/register', (req,res) => res.sendFile(path.join(__dirname,'/views/regis
 app.get('/login', (req,res) => res.sendFile(path.join(__dirname,'/views/login.html')));
 app.post('/register', (req,res) =>res.sendFile(path.join(__dirname,'/views/home.html')));
 app.post('/login', (req,res) =>res.sendFile(path.join(__dirname,'/views/home.html')));
+app.get('/test', (req,res) =>res.sendFile(path.join(__dirname,'/views/test.html')));
+
 
 
 
