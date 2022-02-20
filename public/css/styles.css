@@ -323,6 +323,7 @@ footer .articulos i:hover {
   }
 
   .header-logo img {
+    width: auto;
     padding: 5px;
     height: 60px;
   }
